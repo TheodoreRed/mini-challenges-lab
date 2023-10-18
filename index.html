@@ -27,14 +27,29 @@
           <label for="quantity">How many?</label>
           <input type="number" id="quantity" />
 
-          <label for="which-coin">Which coin?</label>
-          <input list="coin-list" type="text" id="which-coin" />
-          <datalist id="coin-list">
-            <option value="Penny"></option>
-            <option value="Nickel"></option>
-            <option value="Dime"></option>
-            <option value="Quarter"></option>
-          </datalist>
+          <p>Which coin?</p>
+          <div class="radio-container">
+            <div class="radio-coin">
+              <input type="radio" id="penny" name="coinType" />
+              <label for="penny">Penny</label>
+            </div>
+
+            <div class="radio-coin">
+              <input type="radio" id="nickel" name="coinType" />
+              <label for="nickel">Nickel</label>
+            </div>
+
+            <div class="radio-coin">
+              <input type="radio" id="dime" name="coinType" />
+              <label for="dime">Dime</label>
+            </div>
+
+            <div class="radio-coin">
+              <input type="radio" id="quarter" name="coinType" />
+              <label for="quarter">Quarter</label>
+            </div>
+          </div>
+
           <button class="make-money" type="submit">Make Money!</button>
         </form>
         <div class="coin-total-display">Total: $0.00</div>
