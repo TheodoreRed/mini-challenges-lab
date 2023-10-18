@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 style="text-align: center">Mini Challenges</h1>
+      <section>
+        <h2>Vending Machine</h2>
+        <p class="total" style="text-align: center">
+          Total: <strong>$0.00</strong>
+        </p>
+        <div class="vending-items">
+          <button class="cola">Lime Cola<br />$2.00</button>
+          <button class="peanuts">Salted Peanuts<br />$3.00</button>
+          <button class="chocolate">Chocolate Bar<br />$4.00</button>
+          <button class="gummies">Fruit Gummies<br />$6.00</button>
+        </div>
+      </section>
+      <section>
+        <h2>Make Money</h2>
+        <form class="make-money-form">
+          <label for="quantity">How many?</label>
+          <input type="number" id="quantity" />
+
+          <label for="which-coin">Which coin?</label>
+          <input list="coin-list" type="text" id="which-coin" />
+          <datalist id="coin-list">
+            <option value="Penny"></option>
+            <option value="Nickel"></option>
+            <option value="Dime"></option>
+            <option value="Quarter"></option>
+          </datalist>
+          <button class="make-money" type="submit">Make Money!</button>
+        </form>
+        <div class="coin-total-display">Total: $0.00</div>
+        <div class="coin-container"></div>
+      </section>
+      <section>
+        <h2>Light Bulb</h2>
+        <div class="light-bulb-display">Light Bulb</div>
+        <div class="light-bulb-settings">
+          <button class="on">On</button>
+          <button class="off">Off</button>
+          <button class="toggle">Toggle</button>
+          <button class="end">End</button>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

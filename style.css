@@ -1,0 +1,114 @@
+/* body,
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  font-family: sans-serif;
+  background-color: ivory;
+  padding-bottom: 10px;
+}
+
+section {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.vending-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: fit-content;
+  position: relative;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+}
+
+.make-money-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.coin-total-display {
+  font-size: 22px;
+  background-color: lightslategray;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+}
+
+.coin-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.penny {
+  background: url(https://clipartcraft.com/images/penny-clipart-transparent-background-1.png);
+  width: 75px;
+  height: 75px;
+}
+
+.nickel {
+  background: url(https://p7.hiclipart.com/preview/218/409/290/coin-united-states-jefferson-nickel-silver-coin.jpg);
+  width: 84px;
+  height: 84px;
+}
+
+.dime {
+  background: url(https://webstockreview.net/images/coin-clipart-dime-8.jpg);
+  width: 71px;
+  height: 71px;
+}
+.quarter {
+  background: url(https://th.bing.com/th/id/R.5287779a6cff23d0cb9b2aaccb243cf7?rik=f8ePPPkrjh0E5g&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fquarter-transparent-background%2fquarter-transparent-background-9.jpg&ehk=kPx6gVkO9ZP%2fRg4%2fh1Ie1Sp9iqPVZkZVd5jAY0JlUuQ%3d&risl=&pid=ImgRaw&r=0);
+  width: 96px;
+  height: 96px;
+}
+
+.coin {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: transparent;
+}
+
+.light-bulb-display {
+  background-color: gray;
+  color: white;
+  width: fit-content;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.bright-mode-bulb {
+  color: black;
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.bright-mode-body {
+  background-color: #ffff8c;
+}
