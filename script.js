@@ -10,6 +10,8 @@ const gummyBtn = document.querySelector(".gummies");
 const totalP = document.querySelector(".total");
 let vendingTotal = 0;
 
+// build a function for repeating code
+
 colaBtn.addEventListener("click", () => {
   vendingTotal += 2;
   totalP.innerHTML = `Total: <strong>$${vendingTotal.toFixed(2)}</strong>`;
@@ -119,6 +121,7 @@ toggleBtn.addEventListener("click", () => {
 });
 
 endBtn.addEventListener("click", () => {
+  lightBulbDisplay.remove();
   onBtn.disabled = true;
   offBtn.disabled = true;
   toggleBtn.disabled = true;
